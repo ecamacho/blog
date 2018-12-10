@@ -16,8 +16,8 @@ customCSS = ["css/custom.css"]
 [params.rss]
 
 includeContent = true # Includes whole content in rss
-authorName = "Emir Ribic" # Site author's full name
-authorEmail = "ribice@gmail.com"
+authorName = "Erick Camacho" # Site author's full name
+authorEmail = "me@erickcamacho.com"
 
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
@@ -38,7 +38,7 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 
 twitter = "ecamacho"
 github = "ecamacho"
-email = ""
+email = "me@erickcamacho.com"
 linkedin = ""
 gitlab = ""
 instagram = ""
@@ -46,7 +46,7 @@ codepen = ""
 facebook = ""
 
 [params.social.config]
-platforms = ["twitter","github"]
+platforms = ["twitter","github", "email"]
 
 [params.matomoAnalytics]
 siteID = 1
