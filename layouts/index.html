@@ -2,7 +2,7 @@
 {{ partial "nav" . }}
 <section class="section">
     <div class="container">
-        {{ $paginator := .Paginate (where (where .Pages ".Type" "!=" "about") .Pages "Params.hidden" "ne" true) }}
+        {{ $paginator := .Paginate (where .Pages ".Type" "!=" "about") }}
         {{ range sort .Paginator.Pages }}
         <article>
             <div class="subtitle tags is-6 is-pulled-right">
