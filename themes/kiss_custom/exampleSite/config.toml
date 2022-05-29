@@ -1,10 +1,10 @@
-baseurl = "https://erickcamacho.com"
+baseurl = "https://www.example.com"
 languageCode = "en"
-title = "Erick Camacho"
-theme = "kiss_custom"
-copyright = "&copy; <a href=\"https://github.com/ecamacho\">Erick Camacho</a> 2022"
+title = "Hugo Kiss theme"
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
 disqusShortname = "shortname"
-googleAnalytics = "G-49FWBT8ZWW"
+googleAnalytics = ""
 # Number of posts per page
 Paginate = 5
 enableRobotsTXT = true
@@ -16,15 +16,15 @@ customCSS = ["css/custom.css"]
 [params.rss]
 
 includeContent = true # Includes whole content in rss
-authorName = "Erick Camacho" # Site author's full name
-authorEmail = "me@erickcamacho.com"
+authorName = "Emir Ribic" # Site author's full name
+authorEmail = "ribice@gmail.com"
 
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
 enableSocial = false # Adds OpenGraph and Twitter cards
 homeTitle = "" # Title for home page
 poweredby = true # Adds powered by Hugo and Kiss below Copyright section
-related = false # Includes related articles
+related = true # Includes related articles
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
@@ -36,18 +36,24 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 
 [params.social]
 
-twitter = "ecamacho"
-github = "ecamacho"
-email = "me@erickcamacho.com"
-linkedin = ""
-gitlab = ""
+twitter = "ribicemir"
+github = "ribice"
+email = "ribice@gmail.com"
+linkedin = "ribice"
+gitlab = "ribice"
 instagram = ""
 codepen = ""
 facebook = ""
 
 [params.social.config]
-platforms = ["twitter","github", "email"]
+platforms = ["twitter","github","email","email","linkedin","gitlab"]
 
+[params.matomoAnalytics]
+siteID = 1
+rootURL = "//matomo.example.com/"
+
+[params.fathomAnalytics]
+rootURL = "//fathom.example.com/"
 
 [taxonomies]
 tag ="tags"

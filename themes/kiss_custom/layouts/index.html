@@ -2,13 +2,7 @@
 {{ partial "nav" . }}
 <section class="section">
   <div class="container">
-    {{- $pages := . -}}
-    {{- if .IsHome -}}
-    {{- $pages = .Site.RegularPages -}}
-    {{- else -}}
-    {{ $pages = .Pages -}}
-    {{- end -}}
-    {{ $paginator := .Paginate (where $pages ".Type" "ne" "about") }}
+    {{ $paginator := .Paginate (where .Pages "Params.hidden" "ne" true) }}
     {{ range sort .Paginator.Pages }}
     <article>
       <div class="subtitle tags is-6 is-pulled-right">
@@ -16,7 +10,7 @@
         {{ partial "tags" .Params.tags }}
         {{ end }}
       </div>
-      <h2 class="subtitle is-6 date">{{ .Date.Format "January 2, 2006" }}</h2>
+      <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
       <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
       <div class="content">
         {{ .Summary | plainify | safeHTML }}
@@ -32,4 +26,3 @@
 </section>
 {{ partial "pager" . }}
 {{ partial "footer" . }}
-
