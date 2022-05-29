@@ -1,0 +1,42 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: #212224ff;
+    --quick-silver: #a1a1a1ff;
+    --independence: #475977ff;
+    --maximum-blue-purple: #a6b2ebff;
+    --celadon-blue: #1f7ea7ff;
+  }
+
+  body {
+    color: #fff;
+    background-color: var(--main-bg-color);
+  }
+
+  body a {
+    color: #fff;
+  }
+
+  .section {
+    background-color: var(--main-bg-color);
+  }
+  .nav {
+    background-color: var(--main-bg-color);
+  }
+  .title,
+  .title a,
+  .nav-item a {
+    color: var(--quick-silver)
+  }
+  .subtitle {
+    color: var(--maximum-blue-purple);
+  }
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    color: var(--celadon-blue);
+  }
+}
+
