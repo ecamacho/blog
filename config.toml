@@ -17,7 +17,6 @@ customCSS = ["css/custom.css"]
 
 includeContent = true # Includes whole content in rss
 authorName = "Erick Camacho" # Site author's full name
-authorEmail = "me@erickcamacho.com"
 
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
@@ -46,8 +45,7 @@ codepen = ""
 facebook = ""
 
 [params.social.config]
-platforms = ["twitter","github", "email"]
-
+platforms = ["twitter","github"]
 
 [taxonomies]
 tag ="tags"
